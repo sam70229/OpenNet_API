@@ -1,0 +1,22 @@
+{
+    "url": "https://thereportoftheweekapi.com/api/v1/reports/",
+    "method": "GET",
+    "query_params": {
+        "category": "Stream Review"
+    },
+    "response_code": 400,
+    "response_body": {
+        "error": "Bad Request",
+        "message": "querystring/category must be equal to one of the allowed values"
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "statusCode": {"type": "number"},
+            "code": {"type": "string"},
+            "error": {"type": "string"},
+            "message": {"type": "string"}
+        },
+        "required": ["statusCode", "code", "error", "message"]
+    }
+}

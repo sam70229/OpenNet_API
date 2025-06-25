@@ -1,0 +1,54 @@
+{
+    "url": "https://thereportoftheweekapi.com/api/v1/reports/",
+    "method": "GET",
+    "query_params": {
+        "category": "Running On Empty",
+        "min_rating": 3,
+        "max_rating": 9
+    },
+    "response_code": 200,
+    "response_body": {
+        "reports": [
+            {
+                "product": "Froot Loops Mini Donuts",
+                "manufacturer": "Hardee's",
+                "category": "Running On Empty",
+                "videoTitle": "Do Hardee's Mini Donuts Really Taste Like Froot Loops Cereal?",
+                "videoCode": "aAHHA38NW1U",
+                "dateReleased": "2018-09-01",
+                "rating": 8.5,
+                "id": "b5fcc3d4-cf56-422d-9d7a-92fef985062e"
+            }
+        ]
+    },
+    "schema": {
+        "type": "object",
+        "properties": {
+            "reports": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "product" : {"type": "string"},
+                    "manufacturer" : {"type": "string"},
+                    "category" : {"type": "string"},
+                    "videoTitle" : {"type": "string"},
+                    "videoCode" : {"type": "string"},
+                    "dateReleased" : {"type": "string"},
+                    "rating" : {"type": "number"},
+                    "id" : {"type": "string"}
+                },
+                "required": [
+                    "product",
+                    "manufacturer",
+                    "category",
+                    "videoTitle",
+                    "videoCode",
+                    "dateReleased",
+                    "rating",
+                    "id"
+                ]
+            }
+        },
+        "required": ["reports"]
+    }
+}

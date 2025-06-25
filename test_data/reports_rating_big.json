@@ -1,0 +1,14 @@
+{
+    "url": "https://thereportoftheweekapi.com/api/v1/reports/",
+    "method": "GET",
+    "query_params": {
+        "category": "Running On Empty",
+        "min_rating": 3,
+        "max_rating": 11
+    },
+    "response_code": 400,
+    "response_body": {
+        "error": "Bad Request",
+        "message": "querystring/max_rating must be <= 10"
+    }
+}

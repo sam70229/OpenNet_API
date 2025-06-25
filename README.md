@@ -1,3 +1,25 @@
+# Environment Setup
+You need to install `uv` package manager for this project first
+``` bash
+# Create a virtual env first for project
+python3 -m venv venv
+
+# activate virtual env
+source venv/bin/activate
+
+# install uv
+pip install uv
+
+# install projects dependencies
+uv pip install -r pyproject.toml
+```
+
+# Run tests
+``` bash
+# Runs all the tests
+pytest tests/
+```
+
 # Testing Target
 [API Endpoint](https://thereportoftheweekapi.com/docs#/default/get_api_v1_reports_)
 
